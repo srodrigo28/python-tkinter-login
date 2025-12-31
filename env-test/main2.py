@@ -7,8 +7,11 @@ config = dotenv_values(".env")
 def enviar_notificacao():
     # Buscando os dados diretamente do dicionário 'config'
     # Usamos .get() para evitar erro caso a chave não exista no arquivo
-    email_destino = config.get("EMAIL_DEFAULT")
-    senha = config.get("PASSWORD")
+    email_destino = config.get("MAIL")
+    senha = config.get("KEY")
+
+    print("email_destino:", email_destino)
+    print("senha:", senha)
 
     if email_destino:
         print("--- ACESSO VIA DICIONÁRIO (FORMA 2) ---")

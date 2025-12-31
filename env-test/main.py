@@ -6,12 +6,16 @@ load_dotenv()
 
 def enviar_notificacao():
     # Buscando os dados do arquivo .env usando os.getenv
-    email_destino = os.getenv("EMAIL_DEFAULT")
-    sennha = os.getenv("PASSWORD")
+    email_destino = os.getenv("MAIL")
+    sennha = os.getenv("KEY")
 
     if email_destino:
         print(f"--- {sennha} ---")
         print(f"Enviando alerta para: {email_destino}")
+    
+        print("email_destino:", email_destino)
+        print("senha:", sennha)
+
     else:
         print("Erro: EMAIL_DEFAULT não encontrado no arquivo .env")
 
