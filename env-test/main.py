@@ -4,8 +4,7 @@ from dotenv import load_dotenv
 # O comando abaixo lê o arquivo .env e disponibiliza os dados para o sistema
 load_dotenv()
 
-
-print("Lendo o arquivo .env via dotenv_values... carregando env na pasta do projetocls")
+print("Lendo o arquivo .env via dotenv_values... carregando env na pasta do projeto")
 
 def enviar_notificacao():
     # Buscando os dados do arquivo .env usando os.getenv

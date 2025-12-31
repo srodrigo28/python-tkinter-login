@@ -1,9 +1,9 @@
 from dotenv import dotenv_values
+config = dotenv_values(".env")
 
 # O dotenv_values lê o arquivo .env e retorna um dicionário Python comum
 # Armazenamos esse dicionário na variável 'config'
 print("Lendo o arquivo .env via dotenv_values... carregando env no raiz do projeto")
-config = dotenv_values(".env")
 
 def enviar_notificacao():
     # Buscando os dados diretamente do dicionário 'config'
